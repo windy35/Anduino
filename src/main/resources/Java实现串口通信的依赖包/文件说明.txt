@@ -1,0 +1,6 @@
+windows平台：
+1、把rxtxParallel.dll、rxtxSerial.dll拷贝到：C:\WINDOWS\system32下。
+2、如果是在开发的时候(JDK),需要把RXTXcomm.jar、rxtxParallel.dll、rxtxSerial.dll拷贝到..\jre...\lib\ext下；
+    如：H:\Java\JRE_1.8.221\lib\ext
+3、而且需要把项目1.右键->2.Preperties(首选项)->3.Java Build Path->4.Libraries->5.展开RXTXcomm.jar->6.Native library location:(None)->7.浏览External Folder(选择至该项目的lib文件夹，如：E:/Item/MyItem/WebRoot/WEB-INF/lib).
+如果是用IDEA开发的话，就File->Project Structure->选择library->添加RXTXcomm.jar就行，
